@@ -28,10 +28,8 @@ public class Main  {
         if (stack.isEmpty()&&count==0) {
             System.out.println("Yes");
         }
-        else {
+        else if (!stack.isEmpty()){
             System.out.println("No");
         }
-
-
     }
 }
