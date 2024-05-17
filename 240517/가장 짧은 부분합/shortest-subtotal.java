@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Main  {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
         int n = sc.nextInt();
@@ -25,7 +25,7 @@ public class Main  {
             int temp = 0;
             for (int j = 1; j < input; j++) {
                 if (sum[j] >= n) {
-                    min = j + 1;
+                    min = j+1;
                     temp = j;
                     break;
                 }
