@@ -23,6 +23,7 @@ public class Main  {
         }
         else if (sum[input-1]<n) {
             System.out.println(-1);
+            System.exit(0);
         }
         else {
             int temp = 0;
