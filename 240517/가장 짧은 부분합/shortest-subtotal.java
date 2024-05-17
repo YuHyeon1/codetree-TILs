@@ -21,6 +21,9 @@ public class Main  {
             System.out.println(1);
             System.exit(0);
         }
+        else if (sum[input-1]<n) {
+            System.out.println(-1);
+        }
         else {
             int temp = 0;
             for (int j = 1; j < input; j++) {
