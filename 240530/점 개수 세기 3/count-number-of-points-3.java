@@ -4,6 +4,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st;
 
         // 첫 번째 줄에서 tree와 input 값을 읽어들임
@@ -23,7 +24,11 @@ public class Main {
             st = new StringTokenizer(br.readLine());
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
-            System.out.println(set.subSet(a, b).size() + 1);
+            bw.write((set.subSet(a, b).size() + 1) + "\n");
         }
+
+        bw.flush();
+        bw.close();
+        br.close();
     }
 }
