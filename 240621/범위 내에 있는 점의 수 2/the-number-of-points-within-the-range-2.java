@@ -7,18 +7,29 @@ public class Main {
         int b = sc.nextInt();
         int[] arr = new int[1000001];
         int[] sum = new int[1000001];
+        
         for (int i = 0; i < a; i++) {
             int r = sc.nextInt();
-            arr[r]++;
+            if (r >= 0 && r < 1000001) {
+                arr[r]++;
+            }
         }
-        sum[0] = 0;
-        for (int i =1; i < 1000001; i++){
-            sum[i] = sum[i-1] + arr[i];
+        
+        sum[0] = arr[0];
+        for (int i = 1; i < 1000001; i++){
+            sum[i] = sum[i - 1] + arr[i];
         }
+        
         for (int i = 0; i < b; i++) {
             int A = sc.nextInt();
             int B = sc.nextInt();
-            System.out.println(sum[B] - sum[A-1] );
+            if (A > 0 && B < 1000001 && A <= B) {
+                System.out.println(sum[B] - sum[A - 1]);
+            } else {
+                System.out.println(0); // 잘못된 입력에 대한 기본 처리
+            }
         }
+        
+        sc.close();
     }
 }
