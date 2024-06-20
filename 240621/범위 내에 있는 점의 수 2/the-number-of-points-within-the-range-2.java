@@ -25,7 +25,7 @@ public class Main {
             int B = sc.nextInt();
             if (A > 0 && B < 1000001 && A <= B) {
                 System.out.println(sum[B] - sum[A - 1]);
-            
+            }
         }
         
         sc.close();
