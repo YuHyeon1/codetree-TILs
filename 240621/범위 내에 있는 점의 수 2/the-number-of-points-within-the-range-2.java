@@ -11,6 +11,7 @@ public class Main {
             int r = sc.nextInt();
             arr[r]++;
         }
+        sum[0] = 0;
         for (int i =1; i < 1000001; i++){
             sum[i] = sum[i-1] + arr[i];
         }
