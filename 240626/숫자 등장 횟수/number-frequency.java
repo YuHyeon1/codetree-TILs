@@ -11,7 +11,12 @@ public class Main  {
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < a; i++) {
             int n = Integer.parseInt(st.nextToken());
-            map.put(n,i+1);
+            if (map.containsKey(n)) {
+                map.put(n, map.get(n) + 1);
+            }
+            else {
+                map.put(n, 1);
+            }
         }
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < b; i++) {
