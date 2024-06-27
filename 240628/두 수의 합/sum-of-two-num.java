@@ -20,7 +20,11 @@ public class Main {
                 map.put(num, 1);
             }
             if (map.containsKey(b-num)) {
-                r = r+1*map.get(b-num);
+                if (b-num == num) {
+                    r = r + map.get(b-num)-1;
+                } else {
+                    r = r + map.get(b - num);
+                }
             }
         }
 
