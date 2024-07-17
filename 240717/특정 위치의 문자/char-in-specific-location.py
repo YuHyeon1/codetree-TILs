@@ -1,7 +1,7 @@
 cnt =0
 arr = ["L","E","B","R","O","S"]
 a = input()
-for i in range (0,6):
+for i in range (len(arr)):
     if arr[i]==a:
         print(i)
         cnt+=1
