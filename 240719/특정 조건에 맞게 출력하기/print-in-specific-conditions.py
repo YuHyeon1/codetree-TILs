@@ -6,6 +6,6 @@ for i in range (len(arr)-1,-1,-1):
         break
 for i in range(0,len(arr)):
     if arr[i]%2==0:
-        print(arr[i]//2,end=" ")
+        print(arr[i]/2,end=" ")
     else:
         print(arr[i]+3,end=" ")
