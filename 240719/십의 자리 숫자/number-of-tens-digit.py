@@ -4,7 +4,7 @@ for i in range(len(a)):
     if a[i]==0:
         for j in range(len(a)-i):
             a.pop()
-    break
+        break
 for i in range(len(a)):
     arr[a[i]//10]+=1
 for i in range(1,10):
