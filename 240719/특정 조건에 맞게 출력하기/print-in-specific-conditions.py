@@ -1,5 +1,5 @@
 arr = list(map(int,input().split()))
-for i in range (len(arr)-1,0,-1):
+for i in range (len(arr)-1,-1,-1):
     if arr[i]==0:
         for j in range(0,len(arr)-i):
             arr.pop()
