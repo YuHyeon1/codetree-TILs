@@ -7,4 +7,4 @@ class Student:
 arr = input().split()
 TM=Student(arr[0],arr[1])
 print(f"user codetree lv {10}")
-print(f"user hello lv {TM.eng}")
+print(f"user {TM.kor} lv {TM.eng}")
