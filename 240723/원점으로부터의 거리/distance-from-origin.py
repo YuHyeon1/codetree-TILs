@@ -9,6 +9,6 @@ for i in range(a):
     arr = input().split()
     dot = Dot(int(arr[0]),int(arr[1]),i+1)
     dots.append(dot)
-dots.sort(key = lambda b:(b.x**2+b.y**2,b.n))
+dots.sort(key = lambda b:(abs(b.x)+abs(b.y),b.n))
 for i in range (a):
     print(dots[i].n)
