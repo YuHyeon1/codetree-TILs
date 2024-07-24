@@ -1,6 +1,6 @@
 arr = []
 a, b = map(int,input().split())
-if a=0:
+if a==0:
     print(0)
 while a>0:
     arr.append(a%b)
