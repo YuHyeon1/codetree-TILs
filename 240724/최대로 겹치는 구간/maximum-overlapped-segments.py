@@ -6,6 +6,9 @@ for i in range(num):
         arr[j+100]+=1
 mx = 1
 for i in range (len(arr)):
-    if mx<arr[i] and arr[i]==arr[i+1]:
-        mx = arr[i]
+    if mx<arr[i] and mx<arr[i+1]:
+        if arr[i]>arr[i+1]:
+            mx = arr[i+1]
+        else:
+            mx = arr[i]
 print(mx)
