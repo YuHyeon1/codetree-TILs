@@ -5,11 +5,11 @@ for i in range(n):
     a, b = input().split()
     if b == "R":
         for j in range(int(a)):
-            tile[cnt+j+100000] = "B"
+            tile[cnt+j+100001] = "B"
         cnt += int(a) -1
     else:
         for j in range(int(a)):
-            tile[cnt-j+100000] = "W"
+            tile[cnt-j+100001] = "W"
         cnt -= int(a) +1
 black = 0
 white = 0
