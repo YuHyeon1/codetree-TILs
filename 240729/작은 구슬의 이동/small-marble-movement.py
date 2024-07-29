@@ -28,5 +28,4 @@ for i in range(t):
         r = a
         c = b
         arr[r][c] = 1
-    if i==t-1:
-        print(c, r)
+print(c, r)
