@@ -2,13 +2,13 @@ n, t = map(int,input().split())
 r, c, drct = input().split()
 arr = [[0]*n for _ in range(n)]
 dx, dy = [1,0,-1,0],[0,1,0,-1]
-r = int(r)-1
-c = int(c)-1
+r = int(r)
+c = int(c)
 d = {
-    'U' : 3,
-    'D' : 1,
-    'R' : 0,
-    'L' : 2
+    'U' : 2,
+    'D' : 0,
+    'R' : 1,
+    'L' : 3
 }
 dd = d[drct]
 for i in range (t):
@@ -19,4 +19,4 @@ for i in range (t):
         c = b
     else:
         dd = (dd+2)%4
-print(c,r)
+print(r,c)
