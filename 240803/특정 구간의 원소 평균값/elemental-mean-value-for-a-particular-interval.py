@@ -7,7 +7,7 @@ for i in range(2,n+1):
         b = 0
         for k in range(j,j+i):
             a+=arr[k]
-            b = a/i
+        b = a/i
         for k in range(j,j+i):
             if b == arr[k]:
                 cnt+=1
