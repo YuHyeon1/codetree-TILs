@@ -1,9 +1,9 @@
 n,s = map(int,input().split())
 arr = list(map(int,input().split()))
-cnt = sum(arr)
+cnt = s
 for i in range(n):
     for j in range(i+1,n):
         a=sum(arr)-arr[i]-arr[j]-s
-        if abs(a)<cnt:
+        if cnt>abs(a):
             cnt = abs(a)
 print(cnt)
