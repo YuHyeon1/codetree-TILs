@@ -4,7 +4,7 @@ elapsed_days=0
 num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 while True:
-    if month==12 and day==21:
+    if month==month2 and day==day2:
         break
     elapsed_days+=1
     day+=1
