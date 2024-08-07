@@ -28,7 +28,7 @@ public class Main {
         map.put("Thu",4); map.put("Fri",5); map.put("Sat",6);
         if (map.containsKey(day)) {
             int k = map.get(day);
-            if (k==0&&d2-d1+1>=7) {
+            if (k==0) {
                 cnt--;
             }
             if (k<=(d2-d1+1)%7) {
