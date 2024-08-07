@@ -23,7 +23,7 @@ public class Main {
         for (int i = 1; i < m2; i++) {
             d2 += month[i];
         }
-        cnt = (d2-d1)/7;
+        cnt = (d2-d1+1)/7;
         map.put("Sun",0); map.put("Mon",1); map.put("Tue",2); map.put("Wed",3);
         map.put("Thu",4); map.put("Fri",5); map.put("Sat",6);
         if (map.containsKey(day)) {
