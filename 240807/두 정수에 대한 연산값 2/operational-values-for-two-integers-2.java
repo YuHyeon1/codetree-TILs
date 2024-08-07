@@ -3,12 +3,14 @@ import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class Main  {
-    public void hamsu (int a, int b) {
+    public int hamsu (int a, int b) {
         if (a>b) {
-           System.out.print(a*2+" "+b+10);
+            System.out.print(a*2+" ");
+            return b+10;
         }
         else {
-            System.out.print(a+10+" "+b*2);
+            System.out.print(a+10+" ");
+            return b*2;
         }
     }
     public static void main(String[] args) throws IOException {
@@ -17,6 +19,6 @@ public class Main  {
         int x = Integer.parseInt(st.nextToken());
         int y = Integer.parseInt(st.nextToken());
         Main abc = new Main();
-        abc.hamsu(x,y);
+        System.out.print(abc.hamsu(x,y));
     }
 }
