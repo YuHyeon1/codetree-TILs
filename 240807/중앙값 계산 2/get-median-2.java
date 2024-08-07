@@ -14,9 +14,13 @@ public class Main {
         for (int i=0;i<n;i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-        Arrays.sort(arr);
-        for (int i=0;i<=n/2;i++) {
-            System.out.print(arr[i]+" ");
+        for (int j=0;j<=n;j+=2) {
+            int[] arr2 = new int[j+1];
+            for (int i=0;i<=j;i++) {
+                arr2[i] = arr[i];
+            }
+            Arrays.sort(arr2);
+            System.out.print(arr[j/2]+" ");
         }
     }
 }
