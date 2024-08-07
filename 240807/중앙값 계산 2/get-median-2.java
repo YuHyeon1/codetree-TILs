@@ -20,7 +20,7 @@ public class Main {
                 arr2[i] = arr[i];
             }
             Arrays.sort(arr2);
-            System.out.print(arr[j/2]+" ");
+            System.out.print(arr2[j/2]+" ");
         }
     }
 }
