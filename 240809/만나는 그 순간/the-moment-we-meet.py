@@ -27,3 +27,6 @@ for i in range (1,min(len(timea),len(timeb))):
     if timea[i]==timeb[i]:
         print(i)
         break
+    if i+1 == min(len(timea),len(timeb)):
+        if timea[i]!=timeb[i]:
+            print(-1)
