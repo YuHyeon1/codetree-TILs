@@ -4,7 +4,7 @@ mn = sum(arr)
 for i in range (n-t):
     cnt = 0
     for j in range (i,i+t):
-        cnt+=abs(t-arr[j])
+        cnt+=abs(h-arr[j])
     if cnt < mn:
         mn = cnt
 print(mn)
