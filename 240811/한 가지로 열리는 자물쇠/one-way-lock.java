@@ -13,16 +13,20 @@ public class Main {
         for (int i=0;i<3;i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
+        int[] ay = new int[3];
+        for (int i=0;i<3;i++) {
+            ay[i] = 0;
+        }
         int cnt = 1;
         for (int i=0;i<3;i++) {
-            if (arr[i]<n) {
-                arr[i] = n-arr[i]-2;
-            } else {
-                arr[i] = arr[i] - n;
+            if (n-arr[i]>2) {
+                ay[i] += n-arr[i]-2;
+            } if (arr[i]>3) {
+                ay[i] += arr[i]-3;
             }
         }
         for (int i=0;i<3;i++) {
-            cnt *= arr[i];
+            cnt *= ay[i];
         }
         System.out.println(n*n*n-cnt);
 
