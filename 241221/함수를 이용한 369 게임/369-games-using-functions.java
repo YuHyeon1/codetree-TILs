@@ -21,7 +21,7 @@ public class Main {
                     } else if (Integer.parseInt(arr[j])==6) {
                         count++;
                         break;
-                    } } else if (Integer.parseInt(arr[j])==9) {
+                    }  else if (Integer.parseInt(arr[j])==9) {
                         count++;
                         break;
                     }
