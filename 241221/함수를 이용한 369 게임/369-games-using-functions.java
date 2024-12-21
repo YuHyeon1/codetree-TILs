@@ -15,7 +15,13 @@ public class Main {
                 count++;
             } else {
                 for (int j = 0; j<arr.length; j++) {
-                    if (Integer.parseInt(arr[j])==3 || Integer.parseInt(arr[j])==6 || Integer.parseInt(arr[j])==9) {
+                    if (Integer.parseInt(arr[j])==3) {
+                        count++;
+                        break;
+                    } else if (Integer.parseInt(arr[j])==6) {
+                        count++;
+                        break;
+                    } } else if (Integer.parseInt(arr[j])==9) {
                         count++;
                         break;
                     }
