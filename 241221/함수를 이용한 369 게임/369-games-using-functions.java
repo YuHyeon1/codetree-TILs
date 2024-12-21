@@ -17,6 +17,7 @@ public class Main {
                 for (int j = 0; j<arr.length; j++) {
                     if (Integer.parseInt(arr[j])==3 || Integer.parseInt(arr[j])==6 || Integer.parseInt(arr[j])==9) {
                         count++;
+                        break;
                     }
                 }
             }
