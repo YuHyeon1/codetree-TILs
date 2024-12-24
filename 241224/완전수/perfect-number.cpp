@@ -14,6 +14,7 @@ int main() {
         if (count == i) {
             cnt++;
         }
+        count = 0;
     }
     cout << cnt;
     return 0;
