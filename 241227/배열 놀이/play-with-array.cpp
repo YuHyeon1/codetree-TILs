@@ -23,6 +23,7 @@ int main() {
             for (int j=0;j<n;j++) {
                 if (arr[j] == two) {
                     cout << j+1 << endl;
+                    cnt++;
                 }
             }
             if (cnt == 0) {
