@@ -7,7 +7,7 @@ int main() {
     for (int i=0;i<n;i++) {
         cin >> arr[i];
     }
-    int max, maax;
+    int max, maax = 0;
     for (int i=0;i<n;i++) {
         if (max<arr[i]) {
             max = arr[i];
