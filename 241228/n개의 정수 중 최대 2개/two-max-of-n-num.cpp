@@ -16,6 +16,7 @@ int main() {
     for (int i=0;i<n;i++) {
         if (max == arr[i]) {
             arr[i] = 0;
+            break;
         }        
     }
     for (int i=0;i<n;i++) {
