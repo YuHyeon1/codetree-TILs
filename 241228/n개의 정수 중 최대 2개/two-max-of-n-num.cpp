@@ -15,7 +15,7 @@ int main() {
     }
     for (int i=0;i<n;i++) {
         if (max == arr[i]) {
-            arr[i] = 0;
+            arr[i] = -2147483648;
             break;
         }        
     }
