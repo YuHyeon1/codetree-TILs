@@ -19,10 +19,14 @@ int main() {
         if (one == 1) {
             cout << arr[two-1] << endl;
         } else if (one == 2) {
+            int cnt = 0;
             for (int j=0;j<n;j++) {
                 if (arr[j] == two) {
                     cout << j+1 << endl;
                 }
+            }
+            if (cnt == 0) {
+                cout << 0 << endl;
             }
         } else if (one == 3) {
             for (int j=two-1; j<three; j++) {
