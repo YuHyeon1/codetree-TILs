@@ -24,6 +24,7 @@ int main() {
                 if (arr[j] == two) {
                     cout << j+1 << endl;
                     cnt++;
+                    break;
                 }
             }
             if (cnt == 0) {
