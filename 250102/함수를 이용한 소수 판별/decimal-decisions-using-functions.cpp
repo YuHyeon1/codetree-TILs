@@ -6,6 +6,9 @@ int main() {
     cin >> a >> b;
     for (int i=a; i<=b; i++) {
         bool sosu = true;
+        if (b<2) {
+            break;
+        } else {
         for (int j=2;j<i;j++) {
                 if (i%j==0) {
                     sosu = false;
@@ -16,6 +19,7 @@ int main() {
                 count += i;        
             } 
         }
+    }
     cout << count;
     return 0;
 }
